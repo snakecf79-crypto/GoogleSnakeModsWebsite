@@ -1,4 +1,4 @@
-let IS_DEVELOPER_MODE = false;
+let IS_DEVELOPER_MODE = true;
 let VERSION = '1.1.0';//Gets set to version in build script
 const UPDATE_URL = 'https://github.com/DarkSnakeGang/GoogleSnakeModLoader/raw/main/build/snake-mod-loader-fbx.user.js';//Gets set from build script
 const WEB_VERSION = true;//web snake
@@ -143,7 +143,7 @@ let externalConfig = {
   addDeveloperOptions: function() {
     this.modInfo.modsConfig.testMod = {
       displayName: 'Test Mod',
-      hasUrl: false,
+      hasUrl: true,
       modDescription: {
         descriptionName: 'Test Mod',
         authors: [
@@ -1861,3 +1861,4 @@ window.appendCodeWithinSnakeModule = function(snakeCode, codeToAdd, addSemicolon
 window.swapInSnakeGlobal = function(text) {
   return assertReplace(text, /^_\./, '_s.');
 }
+
