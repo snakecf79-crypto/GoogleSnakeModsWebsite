@@ -143,7 +143,7 @@ let externalConfig = {
   addDeveloperOptions: function() {
     this.modInfo.modsConfig.testMod = {
       displayName: 'Test Mod',
-      hasUrl: false,
+      hasUrl: true,
       modDescription: {
         descriptionName: 'Test Mod',
         authors: [
@@ -1861,3 +1861,4 @@ window.appendCodeWithinSnakeModule = function(snakeCode, codeToAdd, addSemicolon
 window.swapInSnakeGlobal = function(text) {
   return assertReplace(text, /^_\./, '_s.');
 }
+
